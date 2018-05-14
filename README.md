@@ -1,59 +1,77 @@
-# CRUD_JSP-BBDD
+# CRUD_JSP-BBDDrev.2
 
 Gestion de catequesis de Colmenarejo. 
-Se requiere realizar la gesti�n de los ni�os y catequistas de los tres ciclos de preparaci�n para recibir los sacramentos de iniciaci�n cristiana en el n�cleo de Colmenarejo (capilla Virgen de F�tima) que forma parte de la parroquia del Carmen de Campanillas.
+Se requiere realizar la gestión de los niños y catequistas de los tres ciclos de preparación para recibir los sacramentos de iniciación cristiana en el núcleo de Colmenarejo (capilla Virgen de Fátima) que forma parte de la parroquia del Carmen de Campanillas. En esta revisión del anterior se incluye el uso de HashMap (implementado para establecer el login y la validación del mismo) y de ArrayList (empleado en la modificación del campo "ciclo" de las tres tablas que en la versión anterior se había definido como "enum").
 
 
-# P�GINA PRINCIPAL
-![Bienvenida](https://github.com/CarmenMorenodeVega/CRUD_JSP-BBDD/Imagenes/pagPrincipal.JPEG)
+# PÁGINA PRINCIPAL
+![Bienvenida](Imagenes/pagPrincipal.JPG)
 
 
-# MEN� PRINCIPAL
-![Men�](https://github.com/CarmenMorenodeVega/CRUD_JSP-BBDD/blob/master/Imagenes/menuPrincipal.JPEG)
+# MENÚ PRINCIPAL
+![Menú](Imagenes/menuPrincipal.JPEG)
 
+En esta revisión del CRUD el menú principal ha sido modificado debido a que se incluye un login de acceso (generado mediante HashMap) y, en función de si es ADMIN o CATEQUISTA tienen accesos distintos. Solamente el ADMIN podrá acceder al área de gestión para realizar altas, bajas y modificaciones en la base de datos. Cualquier otro catequista una vez registrado accederá a los grupos de ciclos y podrá visualizar tanto catequistas como menores pero sin tener permiso de edición en base de datos.
 
-# MENORES EN FORMACI�N CATEQU�TICA
- ![Menores](https://github.com/CarmenMorenodeVega/CRUD_JSP-BBDD/blob/master/Imagenes/menores.JPEG)
+# AREA DE GESTION DE MENORES Y CATEQUISTAS
+ ![Gestión](Imagenes/accesoBbdd.JPG)
+ 
+Si la contraseña del ADMIN es incorrecta, informa del error y envía de nuevo al usuario a la ventana de registro.
+![Admin Contraseña Incorrecta](Imagenes/admincontrasIncorrect.JPG)
+![Admin Contraseña Incorrecta](Imagenes/admincontrasIncorrect2.JPG)
 
-Modficar datos de los menores:
-   
-   ![ModificarMenores](https://github.com/CarmenMorenodeVega/CRUD_JSP-BBDD/blob/master/Imagenes/modificaMenor.JPEG)
+Si la contraseña es correcta, el Admin accede al área de gestión. 
+![Admin Contraseña Correcta](Imagenes/admincorrecta.JPG)
+![Sesion de Gestión de admin](Imagenes/sesionadmin.JPG)
 
+# CERRAR SESIÓN ADMIN
+Si el admin sale de la sesión, retorna a la página principal.
+Si, por el contrario decide continuar puede acceder a la gestion o ir a los ciclos.
+
+# MENORES
+ ![Menores](Imagenes/menores.JPG)
+ 
+ Modficar datos de los menores:
+![ModificarMenores](Imagenes/modificaMenor.JPG)
 
 # CATEQUISTAS
- ![Catequistas](https://github.com/CarmenMorenodeVega/CRUD_JSP-BBDD/blob/master/Imagenes/catequistas.JPEG)
+ ![Catequistas](Imagenes/catequistas.JPG)
 
 Modficar datos de los catequistas:
-   
-   ![ModificarCatequistas](https://github.com/CarmenMorenodeVega/CRUD_JSP-BBDD/blob/master/Imagenes/modificaCatequista.JPEG)
-
+ ![ModificarCatequistas](Imagenes/modificaCatequista.JPG)
 
 # CICLOS
- ![MenuPrincipalciclos](https://github.com/CarmenMorenodeVega/CRUD_JSP-BBDD/blob/master/Imagenes/ciclos.JPEG)
+ ![MenuPrincipalciclos](Imagenes/ciclos.JPEG)
  
-
 # CATEQUISTAS POR CICLO
- ![Catequistasciclo1](https://github.com/CarmenMorenodeVega/CRUD_JSP-BBDD/blob/master/Imagenes/catequistasCiclo1.JPEG)
+ ![Catequistasciclo1](Imagenes/catequistasCiclo1.JPEG)
 
 # MENORES POR CICLO
- ![Menoresciclo1](https://github.com/CarmenMorenodeVega/CRUD_JSP-BBDD/blob/master/Imagenes/menoresCiclo1.JPEG)
+![Menoresciclo1](Imagenes/menoresCiclo1.JPEG)
 
-![Catequistasciclo2](https://github.com/CarmenMorenodeVega/CRUD_JSP-BBDD/blob/master/Imagenes/catequistasCiclo2.JPEG)
+![Catequistasciclo2](Imagenes/catequistasCiclo2.JPEG)
 
-![Menoresciclo2](https://github.com/CarmenMorenodeVega/CRUD_JSP-BBDD/blob/master/Imagenes/menoresCiclo2.JPEG)
+![Menoresciclo2](Imagenes/menoresCiclo2.JPEG)
 
-![Catequistasciclo3](https://github.com/CarmenMorenodeVega/CRUD_JSP-BBDD/blob/master/Imagenes/catequistasCiclo3.JPEG)
+![Catequistasciclo3](Imagenes/catequistasCiclo3.JPEG)
  
-![Menoresciclo3](https://github.com/CarmenMorenodeVega/CRUD_JSP-BBDD/blob/master/Imagenes/menoresCiclo2.JPEG)
+![Menoresciclo3](Imagenes/menoresCiclo2.JPEG)
  
+# REGISTRO DE CATEQUISTAS
+Si cualquiera de los catequistas intentan logarse correctamente en el área de gestión serán remitidos al menú "CICLOS". Nunca podrán acceder a la zona de "ADMIN". Así, accederían al menú "CICLOS" descrito en los apartados anteriores.
+![Acceso a ciclos](Imagenes/loginCatequista2.JPEG)
+
+Si la contraseña no es correcta:
+![Contraseña Incorrecta](Imagenes/admincontrasIncorrect2.JPG)
+Si el usuario no existe:
+![Usuario no Existe](Imagenes/userNoesiste.JPEG)
+![Usuario no Existe](Imagenes/userNoesiste2.JPEG)
 
 # BASE DE DATOS
-
-   A continuaci�n, se incluye el diagrama entidad relacion de la base de datos creada para la realizacion de esta
-   aplicacion crud:
+A continuación, se incluye el diagrama entidad relacion de la base de datos creada para la realizacion de esta aplicacion crud:
    
-![Base de Datos](https://github.com/CarmenMorenodeVega/CRUD_JSP-BBDD/blob/master/Imagenes/BbDd1.JPEG)
-
-![Base de Datos](https://github.com/CarmenMorenodeVega/CRUD_JSP-BBDD/blob/master/Imagenes/BbDd3.JPEG)
-
+![Base de Datos](Imagenes/BbDd1.JPEG)
+![Base de Datos](Imagenes/Capturabbdd1.JPEG)
+![Base de Datos](Imagenes/BbDd3.JPEG)
+![Base de Datos](Imagenes/BbDd4.JPEG)
 
