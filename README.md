@@ -52,27 +52,27 @@ Modficar datos de los catequistas:
 
 ## CICLOS
 
- ![MenuPrincipalciclos](Imagenes/ciclos.JPEG)
+ ![MenuPrincipalciclos](Imagenes/ciclos.JPG)
  
 ## CATEQUISTAS POR CICLO
 
- ![Catequistasciclo1](Imagenes/catequistasCiclo1.JPEG)
+ ![Catequistasciclo1](Imagenes/catequistasCiclo1.JPG)
 
 ## MENORES POR CICLO
 
-![Menoresciclo1](Imagenes/menoresCiclo1.JPEG)
+![Menoresciclo1](Imagenes/menoresCiclo1.JPG)
 
-![Catequistasciclo2](Imagenes/catequistasCiclo2.JPEG)
+![Catequistasciclo2](Imagenes/catequistasCiclo2.JPG)
 
-![Menoresciclo2](Imagenes/menoresCiclo2.JPEG)
+![Menoresciclo2](Imagenes/menoresCiclo2.JPG)
 
-![Catequistasciclo3](Imagenes/catequistasCiclo3.JPEG)
+![Catequistasciclo3](Imagenes/catequistasCiclo3.JPG)
  
-![Menoresciclo3](Imagenes/menoresCiclo2.JPEG)
+![Menoresciclo3](Imagenes/menoresCiclo2.JPG)
  
 # REGISTRO DE CATEQUISTAS
 Si cualquiera de los catequistas intentan logarse correctamente en el área de gestión serán remitidos al menú "CICLOS". Nunca podrán acceder a la zona de "ADMIN". Así, accederían al menú "CICLOS" descrito en los apartados anteriores.
-![Acceso a ciclos](Imagenes/loginCatequista2.JPEG)
+![Acceso a ciclos](Imagenes/loginCatequista2.JPG)
 
 Si la contraseña no es correcta:
 
@@ -80,14 +80,14 @@ Si la contraseña no es correcta:
 
 Si el usuario no existe:
 
-![Usuario no Existe](Imagenes/userNoesiste.JPEG)
-![Usuario no Existe](Imagenes/userNoesiste2.JPEG)
+![Usuario no Existe](Imagenes/userNoesiste.JPG)
+![Usuario no Existe](Imagenes/userNoesiste2.JPG)
 
 # BASE DE DATOS
 A continuación, se incluye el diagrama entidad relacion de la base de datos creada para la realizacion de esta aplicacion crud:
    
-![Base de Datos](Imagenes/BbDd1.JPEG)
-![Base de Datos](Imagenes/Capturabbdd1.JPEG)
-![Base de Datos](Imagenes/BbDd3.JPEG)
-![Base de Datos](Imagenes/BbDd4.JPEG)
+![Base de Datos](Imagenes/BbDd1.JPG)
+![Base de Datos](Imagenes/Capturabbdd1.JPG)
+![Base de Datos](Imagenes/BbDd3.JPG)
+![Base de Datos](Imagenes/BbDd4.JPG)
 
