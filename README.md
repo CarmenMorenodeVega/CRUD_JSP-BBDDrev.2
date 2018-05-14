@@ -70,7 +70,7 @@ Modficar datos de los catequistas:
  
 ![Menoresciclo3](Imagenes/menoresCiclo2.JPG)
  
-# REGISTRO DE CATEQUISTAS
+## REGISTRO DE CATEQUISTAS
 Si cualquiera de los catequistas intentan logarse correctamente en el área de gestión serán remitidos al menú "CICLOS". Nunca podrán acceder a la zona de "ADMIN". Así, accederían al menú "CICLOS" descrito en los apartados anteriores.
 ![Acceso a ciclos](Imagenes/loginCatequista2.JPG)
 
@@ -83,7 +83,7 @@ Si el usuario no existe:
 ![Usuario no Existe](Imagenes/userNoesiste.JPG)
 ![Usuario no Existe](Imagenes/userNoesiste2.JPG)
 
-# BASE DE DATOS
+## BASE DE DATOS
 A continuación, se incluye el diagrama entidad relacion de la base de datos creada para la realizacion de esta aplicacion crud:
    
 ![Base de Datos](Imagenes/BbDd1.JPG)
